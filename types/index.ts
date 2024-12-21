@@ -1,7 +1,6 @@
-export interface GenerateLetterRequest {
-    department: string;
-    subject: string;
-    content: string;
+export interface LetterFormProps {
+    onGenerate: (department: string, topic: string) => void;
+    loading: boolean;
 }
 
 export interface GenerateLetterResponse {
